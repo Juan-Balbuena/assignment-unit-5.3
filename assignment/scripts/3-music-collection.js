@@ -23,11 +23,20 @@ console.log(addToCollection(myCollection,'Sometimes','Britney Spears','1998'));
 
 console.log(myCollection);
 
-// - Use and Test the `addToCollection` function:
-//   - Add 6 albums to **your** collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
-//   - `console.log`` each album as added using the function's returned value.
-//   - After all are added, console.log the `collection` array.
+function showCollection(collection) {
+  for (let i = 0; i < collection.length; i++){
+    let record = collection[i];
+    console.log(`${record.title} by ${record.artist}, published in ${record.yearPublished}`);
+  }
+}
 
+showCollection(myCollection);
+
+// - Create a function named `showCollection`. This function should:
+//   - Take in a `collection` parameter. (This allows it to be reused to show any array of album objects!)
+//   - Loop over the `collection` and `console.log` each album's information formatted **within a single string**, like: `TITLE by ARTIST, published in YEAR`.
+
+// - Test the `showCollection` function.
 
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
