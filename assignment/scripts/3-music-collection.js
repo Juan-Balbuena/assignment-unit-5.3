@@ -1,6 +1,6 @@
 console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
-myCollection = [];
+let myCollection = [];
 
 
 function addToCollection(Collection, title, artist, yearPublished){
@@ -14,7 +14,19 @@ Collection.push(record);
 return record;
 }
 
+console.log(addToCollection(myCollection, 'Hey you', 'Mocha', '2023'));
+console.log(addToCollection(myCollection, 'Hey me','Mocha','2023'));
+console.log(addToCollection(myCollection, 'BYE','Pe$o Pluma', '2023'));
+console.log(addToCollection(myCollection,'Piece of me','Britney Spears','2007'));
+console.log(addToCollection(myCollection,'Everytime','Britney Spears','2003'));
+console.log(addToCollection(myCollection,'Sometimes','Britney Spears','1998'));
 
+console.log(myCollection);
+
+// - Use and Test the `addToCollection` function:
+//   - Add 6 albums to **your** collection. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
+//   - `console.log`` each album as added using the function's returned value.
+//   - After all are added, console.log the `collection` array.
 
 
 
